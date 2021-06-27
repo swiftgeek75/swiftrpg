@@ -1,0 +1,62 @@
+name: Bug Report
+description: File a bug report against the SwiftRPG mod
+title: "[Bug]: "
+labels: [bug, triage]
+assignees:
+  - swiftgeek75
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please fill out as much detail as possible to help us find and fix the bug quicker.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also, what did you expect to happen?
+      placeholder: <repro steps, outcome or behavior including error messages, and expected behavior. Full stack trace can be inputted further down.>
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: What SwiftRPG version are you seeing the problem on?
+      description: Make sure you are on the latest version before reporting. If your version isn't on the list, then we no longer support that version.
+      options:
+        - 0.1
+    validations:
+      required: true
+  - type: dropdown
+    id: MineCraft-Version
+    attributes:
+      label: What Minecraft version are you seeing the problem on?
+      description: If you don't see your Minecraft version in the list, then SwiftRPG doesn't support that version.
+      multiple: true
+      options:
+        - 1.16.5
+  - type: input
+    id: Forge-Version
+    attributes:
+      label: What Forge version are you seeing the problem on?
+  - type: dropdown
+    id: Server-Bool
+    attributes:
+      label: Does this happen only on a server?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log or stack trace
+      description: Upload the relevant log output or stack trace or use a link to pastebin/gist/etc.
