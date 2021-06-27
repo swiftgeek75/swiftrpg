@@ -1,0 +1,26 @@
+name: Feature Request
+description: Request a new feature in the SwiftRPG mod.
+title: "[Feature]: "
+labels: [feature, triage]
+assignees:
+  - swiftgeek75
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using SwiftRPG and taking the time to request a feature to make it better!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-request
+    attributes:
+      label: What functionality do you want added?
+      placeholder: <Behavior you want, mod support, etc - the more details the better. What activity, what tool, what progression?>
+    validations:
+      required: true
